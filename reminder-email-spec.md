@@ -1,6 +1,6 @@
-# Reminder email spec — GF's timetable
+# Reminder email spec — Timetable
 
-Read at run time by the two scheduled tasks, **GF timetable — morning reminder (06:30)** and **GF timetable — evening recap (18:00)**. Edit this file, push it, and the next run picks the changes up — no need to touch either task.
+Read at run time by the two scheduled tasks, ** timetable — morning reminder (06:30)** and ** timetable — evening recap (18:00)**. Edit this file, push it, and the next run picks the changes up — no need to touch either task.
 
 Live at `https://raw.githubusercontent.com/Pythagorrel/Pixel-Calendar/main/reminder-email-spec.md`.
 
