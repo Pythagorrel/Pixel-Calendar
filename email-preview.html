@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Reminder emails — preview</title>
+<style>
+  :root{ --ink:#3a2e28; --parchment:#fbf6e9; --panel:#fff; --rule:#e3d9c4; --muted:#7a6a5e; }
+  *{box-sizing:border-box}
+  body{margin:0;background:#efe7d4;color:var(--ink);
+       font:15px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;padding:24px 16px 56px}
+  .wrap{max-width:1180px;margin:0 auto}
+  h1{font-size:20px;margin:0 0 4px}
+  .lede{color:var(--muted);margin:0 0 24px;font-size:14px}
+  .grid{display:grid;gap:24px;grid-template-columns:repeat(auto-fit,minmax(420px,1fr))}
+  .mail{background:var(--panel);border:1px solid var(--rule);border-radius:8px;overflow:hidden;
+        box-shadow:0 1px 3px rgba(58,46,40,.10)}
+  .hdr{padding:14px 18px;border-bottom:1px solid var(--rule);background:#faf7ef}
+  .tag{display:inline-block;font-size:11px;letter-spacing:.08em;text-transform:uppercase;
+       color:var(--muted);margin-bottom:6px}
+  .subj{font-weight:700;font-size:15px;margin:0}
+  .meta{font-size:12px;color:var(--muted);margin-top:6px}
+  .body{padding:20px 22px 24px}
+  .kicker{font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);
+          margin:0 0 10px;font-weight:600}
+  .headline{font-size:17px;font-weight:700;margin:0 0 2px}
+  .sub{color:var(--muted);font-size:13px;margin:0 0 18px}
+  table.sess{width:100%;border-collapse:collapse;margin:0 0 18px}
+  table.sess td{padding:9px 0;vertical-align:top;border-bottom:1px solid #f0eade}
+  table.sess tr:last-child td{border-bottom:0}
+  td.t{width:104px;white-space:nowrap;font-variant-numeric:tabular-nums;font-weight:600;font-size:13px}
+  .swatch{display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:7px;
+          vertical-align:baseline;border:1px solid rgba(58,46,40,.28)}
+  .cname{font-weight:600}
+  .cmeta{color:var(--muted);font-size:12.5px;margin-top:1px}
+  .pill{display:inline-block;font-size:10.5px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;
+        padding:2px 6px;border-radius:3px;margin-left:6px;vertical-align:1px;
+        background:#fff3cd;color:#7a5d00;border:1px solid #f0dfa8}
+  .pill.lab{background:#ffe3ea;color:#8a3350;border-color:#f5c3d0}
+  .callout{background:#fbf6e9;border-left:3px solid #c9b998;padding:11px 14px;border-radius:0 4px 4px 0;
+           font-size:13.5px;margin:0 0 16px}
+  .callout strong{font-weight:700}
+  .gap{color:var(--muted);font-size:12.5px;font-style:italic}
+  .foot{border-top:1px solid #f0eade;margin-top:4px;padding-top:14px;font-size:12.5px;color:var(--muted)}
+  .foot div{margin-bottom:5px}
+  .foot b{color:var(--ink);font-weight:600}
+  .note{max-width:1180px;margin:28px auto 0;font-size:13.5px;color:#5c4d43;background:#fff;
+        border:1px solid var(--rule);border-radius:8px;padding:16px 20px}
+  .note h2{font-size:14px;margin:0 0 8px}
+  .note ul{margin:0;padding-left:18px}
+  .note li{margin-bottom:5px}
+  @media (prefers-color-scheme: dark){
+    :root{ --ink:#f0e7d8; --panel:#2a2320; --rule:#453a33; --muted:#a8968a; }
+    body{background:#1d1815}
+    .hdr{background:#322a26}
+    .callout{background:#332b26;border-left-color:#6b5a45}
+    table.sess td{border-bottom-color:#3a312c}
+    .foot{border-top-color:#3a312c}
+    .note{background:#2a2320}
+    .pill{background:#4a3d1a;color:#f3dd9d;border-color:#6b5722}
+    .pill.lab{background:#4d2a35;color:#ffc3d3;border-color:#70414f}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Reminder emails — preview</h1>
+  <p class="lede">Both examples are for <strong>Tuesday 8 September 2026</strong>, generated from the pixel-calendar data. Nothing has been scheduled or sent.</p>
+
+  <div class="grid">
+
+    <!-- ============ MORNING ============ -->
+    <div class="mail">
+      <div class="hdr">
+        <span class="tag">Morning · sends 06:30</span>
+        <p class="subj">Tue 8 Sep — 2 courses, 08:00–17:00 · Dental Public Health starts today</p>
+        <div class="meta">to jorreldesantos066@gmail.com</div>
+      </div>
+      <div class="body">
+        <p class="kicker">Today</p>
+        <p class="headline">Tuesday 8 September</p>
+        <p class="sub">Week 2 · 7 contact hours · first class 08:00, done 17:00</p>
+
+        <div class="callout">
+          <strong>First day of Dental Public Health.</strong> Session 1 of 26 with Dr.&nbsp;Balkaran. Every session in this course is a Tuesday morning — this is the pattern for the next nine weeks.
+        </div>
+
+        <table class="sess">
+          <tr>
+            <td class="t">08:00–11:00</td>
+            <td>
+              <div class="cname"><span class="swatch" style="background:#cdb4f0"></span>Dental Public Health</div>
+              <div class="cmeta">Sessions 1–3 · Dr. Balkaran · Seminar Room A-0135</div>
+            </td>
+          </tr>
+          <tr>
+            <td class="t">11:00–13:00</td>
+            <td><span class="gap">Free — two hours</span></td>
+          </tr>
+          <tr>
+            <td class="t">13:00–17:00</td>
+            <td>
+              <div class="cname"><span class="swatch" style="background:#ffb4c6"></span>Composite Restorations<span class="pill lab">Lab</span></div>
+              <div class="cmeta">LEC/LAB sessions 5–8 · Dr. McDonald · Dental Technique Laboratory</div>
+            </td>
+          </tr>
+        </table>
+
+        <div class="foot">
+          <div><b>No</b> exams, quizzes or assessments today.</div>
+          <div><b>Tomorrow:</b> her longest day of the semester — 08:00–20:00, four courses, and both Diagnostic Imaging and Orthodontics start.</div>
+          <div><b>Next day off:</b> Monday 19 October, National Heroes Day — 41 days away.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============ EVENING ============ -->
+    <div class="mail">
+      <div class="hdr">
+        <span class="tag">Evening · sends 20:00</span>
+        <p class="subj">Tue 8 Sep recap — Public Health + a 4-hour lab · tomorrow is a 12-hour day</p>
+        <div class="meta">to jorreldesantos066@gmail.com</div>
+      </div>
+      <div class="body">
+        <p class="kicker">How today went</p>
+        <p class="headline">Tuesday 8 September</p>
+        <p class="sub">7 contact hours · 08:00 through 17:00</p>
+
+        <table class="sess">
+          <tr>
+            <td class="t">08:00–11:00</td>
+            <td>
+              <div class="cname"><span class="swatch" style="background:#cdb4f0"></span>Dental Public Health</div>
+              <div class="cmeta">Sessions 1–3 of 26 · Dr. Balkaran · course opened today</div>
+            </td>
+          </tr>
+          <tr>
+            <td class="t">13:00–17:00</td>
+            <td>
+              <div class="cname"><span class="swatch" style="background:#ffb4c6"></span>Composite Restorations<span class="pill lab">Lab</span></div>
+              <div class="cmeta">LEC/LAB sessions 5–8 of 78 · Dr. McDonald · four hours standing</div>
+            </td>
+          </tr>
+        </table>
+
+        <div class="callout">
+          <strong>Tomorrow is the heavy one.</strong> Wednesday 9 September runs 08:00 to 20:00 — Diagnostic Imaging lecture then lab, Sign Language at 15:00, and Orthodontics finishing at 20:00. Two new courses start. Worth an early night.
+        </div>
+
+        <p class="kicker">Wednesday 9 September</p>
+        <table class="sess">
+          <tr><td class="t">08:00–11:00</td><td><div class="cname"><span class="swatch" style="background:#8ecae6"></span>Diagnostic Imaging<span class="pill">Lec</span></div><div class="cmeta">Sessions 1–3 · Dr. Osagbemiro · starts today</div></td></tr>
+          <tr><td class="t">12:00–14:00</td><td><div class="cname"><span class="swatch" style="background:#8ecae6"></span>Diagnostic Imaging<span class="pill lab">Lab</span></div><div class="cmeta">Sessions 1–2 · Dr. Osagbemiro &amp; staff dental assistants</div></td></tr>
+          <tr><td class="t">15:00–17:00</td><td><div class="cname"><span class="swatch" style="background:#b7e4a0"></span>Beginner’s Sign Language</div><div class="cmeta">Dr. Cumberbatch</div></td></tr>
+          <tr><td class="t">18:00–20:00</td><td><div class="cname"><span class="swatch" style="background:#8fdec9"></span>Orthodontics</div><div class="cmeta">Sessions 1–2 · Dr. Meeks · starts today</div></td></tr>
+        </table>
+
+        <div class="foot">
+          <div><b>Next key date:</b> Dental Jurisprudence starts Thursday 10 Sep, Pain Management Friday 11 Sep — after that all eight courses are running.</div>
+          <div><b>Next day off:</b> Monday 19 October, National Heroes Day.</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="note">
+    <h2>Two things to settle before I schedule anything</h2>
+    <ul>
+      <li><strong>Personal Dates.md is still empty</strong> — only the commented example row. Birthdays and your anniversary won't appear in these emails until you add rows to it.</li>
+      <li><strong>All Week 15 and 16 exams are provisional</strong> (Draft 6, "subject to change"). When those land in the emails I'll mark them as unconfirmed rather than let a provisional date read as fixed.</li>
+    </ul>
+  </div>
+</div>
+</body>
+</html>
